@@ -18,6 +18,8 @@ class CreateCertificatesTable extends Migration
             $table->string('title');
             $table->string('issuing_organization');
             $table->string('date');
+            $table->string('expiration')->nullable();
+            $table->string('validation_link')->nullable();
             $table->text('description')
                 ->nullable();
             $table->timestamps();
